@@ -1,7 +1,7 @@
 const todo = document.querySelector("#todo");
 const adder = document.querySelector(".add-task");
-const tasks = document.querySelector(".tasks");
-
+const task = document.querySelector(".task");
+const done = document.querySelector(".done");
 
 
 
@@ -16,6 +16,13 @@ function adderTask(){
     if(todo.value == ""){
         alert("Enter a task please !");
     }else{
-        tasks.innerHTML += `${todo.value}`
+        task.innerHTML += `
+        <i class="fa-solid fa-square-check done"></i>
+        <p>${todo.value}</p>
+        
+        <i class="fa-solid fa-trash"></i>
+        <br>`;
+        todo.value ="";
     }
 }
+
