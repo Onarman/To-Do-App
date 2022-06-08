@@ -13,3 +13,6 @@ body{
     justify-content: space-around;
     border: 2px solid pink;
 }
+.p-task{
+    text-decoration: line-through;
+}
