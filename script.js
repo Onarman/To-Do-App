@@ -1,28 +1,19 @@
-const todo = document.querySelector("#todo");
+const input = document.querySelector("#input");
 const adder = document.querySelector(".add-task");
 const task = document.querySelector(".task");
-const done = document.querySelector(".done");
+const ul = document.querySelector("#ul");
 
-
-
-adder.addEventListener("click", adderTask);
-todo.addEventListener('keydown',(event)=>{
-    if(event.key == "Enter"){
-        adderTask();
-    }
-})
-
-function adderTask(){
-    if(todo.value == ""){
-        alert("Enter a task please !");
+adder.addEventListener("click",addTask)
+function addTask(){
+    if(input.value == ""){
+        alert("Enter a task please!!!")
     }else{
-        task.innerHTML += `
-        <i class="fa-solid fa-square-check done"></i>
-        <p>${todo.value}</p>
-        
-        <i class="fa-solid fa-trash"></i>
-        <br>`;
-        todo.value ="";
+        ul.innerHTML += `<li class="li-task"><i class="fa-solid fa-check fa-2x"></i>
+        <p>${input.value}</p>
+        <i class="fa-solid fa-trash-can fa-lg"></i></li>`
     }
 }
+
+
+
 

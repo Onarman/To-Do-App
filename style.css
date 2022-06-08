@@ -2,7 +2,14 @@
     box-sizing: border-box;
 }
 
-.task{
-    display:block;
 
+body{
+    text-align: center;
+}
+.li-task{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid pink;
 }
