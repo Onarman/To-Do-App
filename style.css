@@ -14,18 +14,21 @@ body{
     align-items: center;
     flex-direction: column;
     font-family: 'Indie Flower', cursive;
-    background-image: url(./img/pexels-photo-531844.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background:url(./img/depositphotos_397939966-stock-photo-grunge-old-page-notebook-background.jpg);
+     background-repeat: no-repeat;
+    background-size: auto;
     background-attachment: fixed;
-    background-position: center center; 
+    background-position: center center;
+    background-size: cover;overflow: hidden;
+    
     
     
 }
 
 .container{
-    border: 2px solid red;
-    margin-top: 5vh;
+    border: 3px solid brown;
+    border-radius: 25px;
+    margin-top: 3vh;
     height: 85vh;
     width: 30vw;
     display: flex;
@@ -33,6 +36,10 @@ body{
     flex-direction: column;
     justify-content: start;
     overflow: auto;
+    min-width: 26rem;
+    box-shadow: 10px 10px 5px rgb(71, 86, 91) ;
+    
+
 }
 .li-task{
     list-style-type: none;
@@ -48,21 +55,29 @@ body{
 }
 .p-task{
     text-decoration: line-through;
+    
 }
 
 .todo{
     /* border: 2px solid red; */
     padding: 0.4rem;
     font-size: 1.4rem;
+    
+}
+.todo:hover{
+    cursor: pointer;
+    transform: scale(1.);
+    transition: 0.7s;
 }
 
 #input{
-    background-color:#DADADA ;
+    background-color:#F8E7D1 ;
     color: black;
     width: 10rem;
     height: 3rem;
     border:none;
-    max-width: 10rem;
+    outline: none;
+    
 }
 
 
@@ -74,15 +89,17 @@ body{
     padding: 1.5rem;
     width: 14rem;
     height: 4.7rem;
-    margin-top: 15%;
+    margin-top: 1rem;
     border: 2px solid rgb(19, 18, 18);
     border-radius: 15px;
     gap: 1rem;
+    box-shadow: 10px 10px 5px rgb(71, 86, 91) ;
 
 }
 h1{
     align-self: center;
     padding: 0;
+    margin-top: 5rem;
 }
 
 .task{
@@ -91,8 +108,35 @@ h1{
 
 .fa-check{
     color: green;
+    
 }
+
+.fa-check:hover{
+    transform: scale(1.5);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
 
 .fa-trash-can{
     color: rgb(164, 9, 9);
 }
+
+.fa-trash-can:hover{
+    transform: scale(1.5);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.add-task{
+    color:brown;
+}
+
+.add-task:hover{
+    transform: scale(1.5);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+
+
