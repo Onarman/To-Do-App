@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@300;400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,44 +8,91 @@
 
 
 body{
-    
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(./img/pexels-photo-531844.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
     justify-content: center;
     display: flex;
     align-items: center;
-    position: relative;
+    flex-direction: column;
+    font-family: 'Indie Flower', cursive;
+    background-image: url(./img/pexels-photo-531844.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center; 
+    
+    
 }
 
 .container{
-    position: absolute;
-    width: 60%;
-    
-    overflow: hidden;
-    flex-direction: column;
+    border: 2px solid red;
+    margin-top: 5vh;
+    height: 85vh;
+    width: 30vw;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 1.5rem 2.5rem;
-    border: 2px solid red;
-
-   
-    
+    flex-direction: column;
+    justify-content: start;
+    overflow: auto;
 }
 .li-task{
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
+    width: 24rem;
+    align-content: flex-start;
+    margin: 1rem;
+    padding: 1rem;
+
 }
 .p-task{
     text-decoration: line-through;
 }
 
 .todo{
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    padding: 0.4rem;
+    font-size: 1.4rem;
+}
+
+#input{
+    background-color:#DADADA ;
+    color: black;
+    width: 10rem;
+    height: 3rem;
+    border:none;
+    max-width: 10rem;
+}
+
+
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-bottom: 2px solid #8F6F44;
+    padding: 1.5rem;
+    width: 14rem;
+    height: 4.7rem;
+    margin-top: 15%;
+    border: 2px solid rgb(19, 18, 18);
+    border-radius: 15px;
+    gap: 1rem;
+
+}
+h1{
+    align-self: center;
+    padding: 0;
+}
+
+.task{
+    gap: 1rem;
+}
+
+.fa-check{
+    color: green;
+}
+
+.fa-trash-can{
+    color: rgb(164, 9, 9);
 }
