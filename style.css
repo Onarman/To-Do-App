@@ -63,8 +63,8 @@ body{
     padding: 0.4rem;
     font-size: 1.4rem;
     display: inline-block;
-word-break: break-word; 
-table-layout:fixed;
+    word-break: break-word; 
+    table-layout:fixed;
     
 }
 .todo:hover{
@@ -78,7 +78,7 @@ table-layout:fixed;
     color: black;
     width: 10rem;
     height: 3rem;
-    border:none;
+    border: none;
     outline: none;
     
 }
@@ -97,6 +97,7 @@ table-layout:fixed;
     border-radius: 15px;
     gap: 1rem;
     box-shadow: 10px 10px 5px rgb(71, 86, 91) ;
+    
 
 }
 h1{
@@ -107,6 +108,7 @@ h1{
 
 .task{
     gap: 1rem;
+    
 }
 
 .fa-check{

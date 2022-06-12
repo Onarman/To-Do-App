@@ -14,7 +14,7 @@ input.addEventListener("keydown",(e)=>{
 
 
 function addTask(){
-    if(input.value == ""){
+    if(input.value == ""/*!input.value*/){
         alert("Enter a task please!!!")
     }else{
         task.innerHTML += `<li class="li-task"><i class="fa-solid fa-check fa-2x"></i>
